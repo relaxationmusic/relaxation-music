@@ -13,8 +13,9 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
+body, html {
 	line-height: 1.2;
+	height: 100%;
 }
 ol { 
 	padding-left: 1.4em;
@@ -30,6 +31,10 @@ table {
 } 
 /* конец кода сброса стилей браузера */
 
+.header-falsh {
+	padding: 0;
+}
+
 /* простой двухколончный макет  */
 .main {
 	float: left;
@@ -37,6 +42,7 @@ table {
 }
 .sidebar {
 	margin-left: 63%;
+/*	margin-left: 510px;*/
 	margin-top: 300px;
 	padding: 15px;
 	/*background: #724c2e;*/
@@ -46,14 +52,17 @@ table {
 body {
   color: #B1967C;
   font-family: "Palatino Linotype", Baskerville, serif;
-  padding-top: 115px;
+	padding-top: 15px;
+/*  padding-top: 115px;*/
   background: #030001 url(images/DD-1.png) repeat-x;
   max-width: 800px;
   margin: 0 auto;
 }
+.capitel {
+	padding-top: 70px;
+}
 h1 {
   font-size: 3em;
-  /*font-family: "Arial Black", Arial, sans-serif;*/
 	font-family: 'Josefin Sans', sans-serif;
   margin-bottom: 15px;
 	margin-left: 50px;
@@ -69,7 +78,6 @@ h2 {
 }
 .main h2:nth-child(n+2) {
   color: #E8A064;
-  /*border-bottom: 2px white solid;*/
   background: url(images/LogoRelax_2_sm2.png) no-repeat;
   padding: 0 0 10px 80px;
 }
@@ -82,7 +90,6 @@ h2 {
   margin-left: 80px;
 }
 p.intro {
-  /*color: #6A94CC;*/
   color: #fdddb5;
   font-family: Garamond, Times, serif;
   font-size: 1.2em;
@@ -124,7 +131,128 @@ a:hover {
 .scloud {
 	text-align: right;
 }
+audio {
+	display: block;
+	border-radius: 0 0 0 0;
+}
 
+
+/*ДЛЯ ФУТЕРА*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+.footer-distributed {
+	clear:both; /*супер свойство помогшее подвал отправить вниз: Это свойство позволит расположить Footer ниже всех плавающих блоков, т.е. тех, которым задано свойство Float (обтекание справа или слева). Тем самым мы опустим подвал в самый низ нашего макета (отсюда: https://ktonanovenkogo.ru/html/div-verstka-html/blochnaya-verstka-div-verstka-kak-prizhat-footer-k-nizhnej-chasti-ekrana-maket-sajta-blochnoj-verstki.html)*/
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+	padding: 100px 0 20px 0;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #AFC3D6;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 15px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 20px;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+
+/*HEADER Home About Music Events Blog Contacts*/
+
+
+.menu{
+    margin-left: auto; /*внешние отступы. Если элементу с фиксир размером (у нас 1124) задать этот параметр как auto то он оттолкнется от левого края на максимум возможного*/
+    margin-right: auto; /*а чтобы поставить его посередке так же автоматом задаем отступ от правого края. получается он автоматически высчитывает ширину чтоб встать посередке. Аналог записи вместо двух строк margin: 0 auto;*/
+}
+.menu__list{
+    display: flex;
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 2em;
+	font-family: 'Josefin Sans', sans-serif;
+	padding-left: 1.7em;
+}
+.menu__list-item + .menu__list-item{
+    margin-left: 50px;
+    /*Шоб не слипались меряем расстояние на макете между словами (24) и пишем лефт или райт 24. А шоб у первого слова этого отступа не было пишут + и тот же селектор - это так называемый селектор соседнего элемента. Эта запись означает работать со всеми элементами кроме первого. Это работает только если у одного родителя идут подряд несколько таких элементов. Если не подряд или больше вложенности или он один то не работает*/
+}
+.menu__list-link{
+    /*это оформление непосредственно самих ссылок меню*/
+/*    color: #B1967C;*/
+	color: rgba(177, 150, 124, .6);
+    font-size: 14px;
+    line-height: 28px;
+    text-decoration: none; /*убирает линию подчеркивания у ссылки*/
+    /* font-weight: 400; уже есть по умолчанию в body*/
+}
 
 
 
