@@ -41,7 +41,7 @@ table {
 	width: 60%;
 }
 .sidebar {
-	margin-left: 63%;
+	margin-left: 66%;
 /*	margin-left: 510px;*/
 	margin-top: 300px;
 	padding: 15px;
@@ -114,7 +114,7 @@ p.signature {
 }
 .sidebar h2 {
 	font-size: 2em;
-	text-align: left;
+	text-align: center;
 	margin-left: 0px;
 }
 .sidebar p {
@@ -131,10 +131,60 @@ a:hover {
 .scloud {
 	text-align: right;
 }
+.scloud-left {
+	float: left;
+	margin-left: 80px;
+}
+.scloud-text {
+	margin-left: 0px;
+	text-align: right;
+	padding: 5px 0 0 0;
+}
+p.scloud-text-text {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 15px;
+	color: #AFC3D6;
+	text-align: right;
+	padding: 5px 0 0 200px;
+	line-height: 1.3;
+	margin: 0 0 5px 80px;
+	text-transform: uppercase;
+}
+p.scloud-text-podval {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 13px;
+	text-align: right;
+	padding: 0 0 0 195px;
+	line-height: 1.3;
+}
 audio {
 	display: block;
 	border-radius: 0 0 0 0;
 }
+
+.oval {
+    border-radius:50%;
+    width:30px;
+    height:30px;
+    background:orange;
+    margin:0 0px 0 8px;
+    text-align: center;
+    line-height: 29px;
+	float: left;
+}
+#v {
+	text-align: center;
+	color: black;
+	font-size: 18px;
+	margin: 0;
+	padding: 1px 0 0 4px;
+}
+#t {
+
+	margin:0 0 0 60px;
+    line-height: 29px;
+}
+
 
 
 /*ДЛЯ ФУТЕРА*/
@@ -253,11 +303,5 @@ audio {
     text-decoration: none; /*убирает линию подчеркивания у ссылки*/
     /* font-weight: 400; уже есть по умолчанию в body*/
 }
-
-
-
-
-
-
 
 
