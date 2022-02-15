@@ -1,0 +1,141 @@
+#bg_contact {
+	background-color: #030001;
+	max-width: 800px;
+/*	margin: 0 auto;*/
+    margin-top: 1%;
+	margin-left: auto;
+    margin-right: auto;
+}
+#logo_top img {
+	margin-left: auto;
+    margin-right: auto;
+}
+.greetings p {
+	font-size: 3em;
+/*	color: #B1967C;*/
+	font-family: 'Dancing Script', cursive;	
+	margin-top: 10%;
+	text-align: center;
+/*	margin-bottom: 15px;*/
+/*	margin-left: 50px;*/
+	color: #AFC3D6;
+	margin-bottom: 0px;
+}
+.professions p {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1em;
+	color: white;
+	text-align: center;
+	margin-bottom: 0px;
+}
+.professions p:nth-child(2) {
+/*	color: #E8A064;*/
+	font-size: 1em;
+	margin-top: 0.8%;
+}
+#logo_social_network {
+	margin-top: 4%;
+}
+#logo_social_network img {
+	padding-left: 2%;
+}
+p.text_email {
+	font-size: 1.5em;
+	margin-top: 4%;
+}
+
+
+.greetings {
+	
+}
+.professions {
+
+}
+
+
+/*ДЛЯ ФУТЕРА*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+.footer-distributed {
+	clear:both; /*супер свойство помогшее подвал отправить вниз: Это свойство позволит расположить Footer ниже всех плавающих блоков, т.е. тех, которым задано свойство Float (обтекание справа или слева). Тем самым мы опустим подвал в самый низ нашего макета (отсюда: https://ktonanovenkogo.ru/html/div-verstka-html/blochnaya-verstka-div-verstka-kak-prizhat-footer-k-nizhnej-chasti-ekrana-maket-sajta-blochnoj-verstki.html)*/
+  width: 100%;
+  text-align: center;
+  font: normal 16px sans-serif;
+	padding: 100px 0 20px 0;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #AFC3D6;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 15px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 20px;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
