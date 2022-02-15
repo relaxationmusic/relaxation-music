@@ -59,7 +59,7 @@ body {
   margin: 0 auto;
 }
 .capitel {
-	padding-top: 70px;
+	padding-top: 10%;
 }
 h1 {
   font-size: 3em;
@@ -303,5 +303,11 @@ audio {
     text-decoration: none; /*убирает линию подчеркивания у ссылки*/
     /* font-weight: 400; уже есть по умолчанию в body*/
 }
+
+
+
+
+
+
 
 
