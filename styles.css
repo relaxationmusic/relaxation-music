@@ -75,6 +75,7 @@ h2 {
   font-size: 2.2em;
   color: #AFC3D6;
   margin-bottom: 5px;
+	margin-top: 16px;
 }
 .main h2:nth-child(n+2) {
   color: #E8A064;
@@ -131,16 +132,43 @@ a:hover {
 .scloud {
 	text-align: right;
 }
+.scloud-right {
+	float: right;
+	text-align: right;
+	margin: 0 0 0 -100px;
+	padding: 0 0 0 0;
+}
+.scloud-text-left {
+	text-align: left;
+	padding: 0 0 0 0;
+}
+p.scloud-text-text-left {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 15px;
+	color: #AFC3D6;
+	text-align: left;
+	padding: 5px 0 0 0px;
+	line-height: 1.3;
+	margin: 0 0 5px 80px;
+	text-transform: uppercase;
+}
+p.scloud-text-podval-left {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 13px;
+	text-align: left;
+	padding: 0 0 0 0px;
+	line-height: 1.3;
+}
 .scloud-left {
 	float: left;
 	margin-left: 80px;
 }
-.scloud-text {
+.scloud-text-right {
 	margin-left: 0px;
 	text-align: right;
 	padding: 5px 0 0 0;
 }
-p.scloud-text-text {
+p.scloud-text-text-right {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 15px;
 	color: #AFC3D6;
@@ -150,7 +178,7 @@ p.scloud-text-text {
 	margin: 0 0 5px 80px;
 	text-transform: uppercase;
 }
-p.scloud-text-podval {
+p.scloud-text-podval-right {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 13px;
 	text-align: right;
